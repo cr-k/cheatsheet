@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cheatsheet for HTML and CSS</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" type="text/css" media="screen">
+    <link rel = "icon" href = 
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Circle-icons-dev.svg/1024px-Circle-icons-dev.svg.png" 
+    type = "image/x-icon">
+  </head>
+  <body>
+    <h1>HTML and CSS Cheatsheet</h1>
+    <!--Basic HTML tags-->
+    <div id="basic">
+      <table border="1">
+        <h2>HTML Basic Tags</h2><br id="small-br">
+        <div id="questionAns"><h4>What is an HTML element?</h4>
+        <p>An HTML element is a piece of content in an HTML document and uses the following syntax:
+          <br id="small-br">
+          <i>opening tag + content + closing tag</i>
+        </p>
+        <h4>What is a tag?</h4>
+        <p>HTML tags are keywords within a webpage that define how your browser page is formatted.
+          <br id="small-br">
+          <i><strong>Example:</strong> &lt;div&gt;</i>
+        </p>
+      </div>
+      <br id="small-br">
+        <thead>
+          <tr>
+            <td id="head" style="width: 20%;">Tag/Attribute</td>
+            <td id="head" style="width: 20%;">Name</td>
+            <td id="head">Description</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&lt;div&gt;</td>
+            <td>Division</td>
+            <td>Divides document into sections. Good for class or id attribute.</td>
+          </tr>
+          <tr>
+            <td>&lt;h1&gt; - &lt;h6&gt;</td>
+            <td>Heading</td>
+            <td>HTML can support six different levels of headings. The largest is h1 and the smallest is h6.</td>
+          </tr>
+          <tr>
+            <td>&lt;img&gt;<strong>*</strong></td>
+            <td>Image</td>
+            <td>The image element embeds images in documents. Needs to have src="" defined.</td>
+          </tr>
+          <tr>
+            <td>&lt;a&gt;</td>
+            <td>Anchor</td>
+            <td>Used to create hyperlinks in an HTML document. Needs to have src="" defined.</td>
+          </tr>
+          <tr>
+            <td>&lt;ol&gt;</td>
+            <td>Ordered List</td>
+            <td>Creates a list of items by numbering them. Used with &lt;li&gt;.</td>
+          </tr>
+          <tr>
+            <td>&lt;ul&gt;</td>
+            <td>Unordered List</td>
+            <td>Creates a list of items by using bullet points. Used with &lt;li&gt;.</td>
+          </tr>
+          <tr>
+            <td>&lt;br&gt;</td>
+            <td>Line Break</td>
+            <td>Produces a line break in text.</td>
+          </tr>
+          <tr>
+            <td>&lt;hr&gt;</td>
+            <td>Horizontal Rule</td>
+            <td>Produces a  horizontal line between elements.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <p><strong>*</strong>Self-closing tag</p>
+    <br>
+    <hr>
+    <br>
+    <!--HTML table tags-->
+    <div id="tableTags">
+      <table border=1>
+        <h2>HTML Table Tags</h2>
+        <br>
+        <thead>
+          <tr>
+            <td id="head" style="width: 20%;">Tag/Attribute</td>
+            <td id="head" style="width: 20%;">Name</td>
+            <td id="head">Description</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&lt;table&gt;</td>
+            <td>Table</td>
+            <td>The element that is used to represent data with a two-dimensional table made of rows and columns.</td>
+          </tr>
+          <tr>
+            <td>&lt;thead&gt;</td>
+            <td>Table Head</td>
+            <td>The set of rows defining the column headers in a table.</td>
+          </tr>
+          <tr>
+            <td>&lt;tbody&gt;</td>
+            <td>Table Body</td>
+            <td>The set of rows that contain actual table data.</td>
+          </tr>
+          <tr>
+            <td>&lt;th&gt;</td>
+            <td>Table Heading</td>
+            <td>Adds titles to rows  and columns of a table. Must be enclosed in a &lt;tr&gt;.</td>
+          </tr>
+          <tr>
+            <td>&lt;tr&gt;</td>
+            <td>Table Row</td>
+            <td>Represents a row of cells in a table.</td>
+          </tr>
+          <tr>
+            <td>&lt;td&gt;</td>
+            <td>Table Data</td>
+            <td>The data inside of a table row.</td>
+          </tr>
+          <tr>
+            <td>&lt;tfoot&gt;</td>
+            <td>Table Foot</td>
+            <td>The table rows that define a footer at the end of a table.</td>
+          </tr>
+          <tr>
+            <td>colspan</td>
+            <td>Column Span</td>
+            <td>Defines how many columns a td element should span.</td>
+          </tr>
+          <tr>
+            <td>rowspan</td>
+            <td>Row Span</td>
+            <td>Defines how many rows a td element should span.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <!--CSS selectors and specificity-->
+    <div id="selectors">
+      <table border=1>
+        <h2>CSS Selectors and Specificity</h2><br id="small-br">
+        <div id="questionAns"><h4>What is CSS used for?</h4>
+          <p>CSS is used to describe how a webpage should be presented. Without CSS, and only using HTML, a website would look plain
+            and boring.
+          </p>
+          <h4>What can you change with CSS?</h4>
+          <p>
+            Listed in <a href="#properties">properties</a>, you can change most things about how a webpage displays.
+          </p>
+        </div>
+        <br id="small-br">
+        <thead>
+          <tr>
+            <td id="head" style="width: 20%;">Selector</td>
+            <td id="head" style="width: 20%;">Example</td>
+            <td id="head">Description</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>.class</td>
+            <td>.intro</td>
+            <td>Selects all elements with class="intro".</td>
+          </tr>
+          <tr>
+            <td>.class1 .class2</td>
+            <td>.rectangle1 .rectangle2</td>
+            <td>Selects all elements with both rectangle1 and rectangle2 within its class attribute.</td>
+          </tr>
+          <tr>
+            <td>.class p</td>
+            <td>.intro p</td>
+            <td>Selects all &lt;p&gt; elements that are descendants of an element with class="intro".</td>
+          </tr>
+          <tr>
+            <td>#id</td>
+            <td>#title</td>
+            <td>Selects all elements with id="title".</td>
+          </tr>
+          <tr>
+            <td>element</td>
+            <td>p</td>
+            <td>Selects all &lt;p&gt; elements.</td>
+          </tr>
+          <tr>
+            <td>element .class</td>
+            <td>p .intro</td>
+            <td>Selects all &lt;p&gt; elements with class="intro".</td>
+          </tr>
+          <tr>
+            <td>element, element</td>
+            <td>div, p</td>
+            <td>Selects &lt;div&gt; and &lt;p&gt; elements.</td>
+          </tr>
+          <tr>
+            <td>element element</td>
+            <td>div p</td>
+            <td>Selects all &lt;p&gt; elements inside of &lt;div&gt; elements.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <!--Common CSS properties-->
+    <div id="properties">
+      <table border=1>
+        <h2>Common CSS Properties</h2>
+        <br>
+        <thead>
+          <tr>
+            <td id="head" style="width: 14%;">Property</td>
+            <td id="head">Description</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>background-image</td>
+            <td>Defines an element's background image.</td>
+          </tr>
+          <tr>
+            <td>border</td>
+            <td>Sets the width, style, and color for all four sides of an element's border.</td>
+          </tr>
+          <tr>
+            <td>border-collapse</td>
+            <td>Specify whether table cell borders are connected or seperated.</td>
+          </tr>
+          <tr>
+            <td>color</td>
+            <td>Specify the text color of an element.</td>
+          </tr>
+          <tr>
+            <td>column-span</td>
+            <td>Specifies how many columns an element spans in a multi-column layout.</td>
+          </tr>
+          <tr>
+            <td>display</td>
+            <td>Specifies how an element displays on-screen.</td>
+          </tr>
+          <tr>
+            <td>font-family</td>
+            <td>Defines a list of fonts for an element.</td>
+          </tr>
+          <tr>
+            <td>font-size</td>
+            <td>Defines the font size of the text.</td>
+          </tr>
+          <tr>
+            <td>font-weight</td>
+            <td>Specify the font weight of the text.</td>
+          </tr>
+          <tr>
+            <td>letter-spacing</td>
+            <td>Sets extra spacing between letters.</td>
+          </tr>
+          <tr>
+            <td>line-height</td>
+            <td>Sets the line height between text.</td>
+          </tr>
+          <tr>
+            <td>list-style-type</td>
+            <td>Specifies the marker style for a list-item.</td>
+          </tr>
+          <tr>
+            <td>margin</td>
+            <td>Sets the margin on all four sides of an element.</td>
+          </tr>
+          <tr>
+            <td>max-height</td>
+            <td>Specify the maximum height of an element.</td>
+          </tr>
+          <tr>
+            <td>opacity</td>
+            <td>Specifies the transparency of an element.</td>
+          </tr>
+          <tr>
+            <td>padding</td>
+            <td>Sets the padding on all four sides of an element.</td>
+          </tr>
+          <tr>
+            <td>position</td>
+            <td>Specifies how an element is positioned.</td>
+          </tr>
+          <tr>
+            <td>text-align</td>
+            <td>Sets the horizontal alignment of inline content.</td>
+          </tr>
+          <tr>
+            <td>text-decoration</td>
+            <td>Specifies the decoration added to text.</td>
+          </tr>
+          <tr>
+            <td>text-transform</td>
+            <td>Transforms the case of the text.</td>
+          </tr>
+          <tr>
+            <td>white-space</td>
+            <td>Specifies how the white space in an element is handled.</td>
+          </tr>
+          <tr>
+            <td>width</td>
+            <td>Specify the width of an element.</td>
+          </tr>
+          <tr>
+            <td>word-spacing</td>
+            <td>Sets the spacing between words.</td>
+          </tr>
+          <tr>
+            <td>word-wrap</td>
+            <td>Specifies whether to break words when the content overflows the boundaries of its container.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+    </div>
+  </body>
+</html>
